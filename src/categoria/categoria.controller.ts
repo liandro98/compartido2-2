@@ -21,7 +21,7 @@ constructor(private categoriaSvc: CategoriaService) {}
     }
 
 
-    @Delete(':cvecategoria')
+    @Delete(':cveCategoria')
     async eliminarCategorias(@Param('cveCategoria', ParseIntPipe) cveCategoria: number) {
         return await this.categoriaSvc.eliminar(cveCategoria);
     }
